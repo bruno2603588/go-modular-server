@@ -19,6 +19,28 @@ El servidor implementa una cadena estricta de middlewares organizados secuencial
 
 ---
 
+## 📱 Compatibilidad y Entornos Probados
+
+Gracias a su arquitectura ligera desarrollada desde cero en Go y sin dependencias pesadas, **go-modular-server** garantiza una portabilidad excepcional y un consumo mínimo de recursos. Ha sido validado con éxito en los siguientes entornos:
+
+- **Linux / Ubuntu:** Probado en servidores locales e integrado de forma continua mediante GitHub Actions.
+- **Docker:** Contenedorizado mediante imágenes *multi-stage* optimizadas y orquestadas con Docker Compose.
+- **Android (Termux):** Probado y verificado en entornos móviles locales a través de Termux, demostrando un rendimiento sobresaliente y una respuesta inmediata en arquitecturas ARM.
+
+### 🚀 Despliegue rápido en Termux (Prueba local)
+Si deseas levantar el servidor localmente en un entorno Android con Termux, puedes hacerlo ejecutando los siguientes comandos:
+
+```bash
+# 1. Actualizar paquetes e instalar Go y Git
+pkg update && pkg install golang git -y
+
+# 2. Clonar el repositorio
+git clone [https://github.com/bruno2603588/go-modular-server.git](https://github.com/bruno2603588/go-modular-server.git)
+cd go-modular-server
+
+# 3. Ejecutar el servidor
+go run main.go
+
 ## Estructura del Proyecto
 
 ```text
