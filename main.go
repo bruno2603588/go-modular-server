@@ -65,7 +65,7 @@ func setupRouter() http.Handler {
 			"Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
 			"X-Content-Type-Options":    "nosniff",
 			"X-Frame-Options":           "DENY",
-			"Content-Security-Policy":   "default-src 'self'; script-src 'self';",
+			"Content-Security-Policy":   "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https: 'unsafe-inline';",
 		},
 	}, logModule)
 
